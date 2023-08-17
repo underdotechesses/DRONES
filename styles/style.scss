@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Syne:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Syne:wght@500&family=Urbanist:wght@300&display=swap");
+
+body {
+    padding: 42px 52px;
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+
+        .logo-div {
+            display: flex;
+            justify-content: space-between;
+            width: 14%;
+
+            .logo-name {
+                font-weight: 800;
+                font-family: "Poppins", sans-serif;
+                font-size: 2em;
+                opacity: 0.7;
+            }
+        }
+
+        .first-ul {
+            display: flex;
+            width: 25%;
+            justify-content: space-between;
+
+            li {
+                list-style-type: none;
+                font-family: "Urbanist", sans-serif;
+                font-size: 1.5em;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+
+        .second-ul {
+            display: flex;
+            width: 15%;
+            justify-content: space-around;
+
+            li {
+                list-style-type: none;
+                font-family: "Urbanist", sans-serif;
+                font-size: 1.5em;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+
+            .menu:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .first-section {
+        margin-top: 4em;
+
+        .get-your-hands {
+            font-size: 4em;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .first-section-first-div {
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5em;
+
+            .first-column-div {
+                margin-top: 5em;
+                width: 30%;
+
+                .nemo {
+                    font-size: 1.5em;
+                }
+
+                .first-column-div-div {
+                    display: flex;
+                    margin-top: 5em;
+
+                    .first-column-div-1 {
+                        display: flex;
+                        justify-content: space-between;
+
+                        a {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            text-decoration: none;
+                            background-color: black;
+                            opacity: 0.8;
+                            padding: 1em;
+                            border-radius: 10px;
+
+                            span {
+                                font-size: 1.5em;
+                                color: white;
+                            }
+                        }
+                    }
+
+                    .first-column-div-2 {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-left: 2em;
+
+                        a {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            text-decoration: none;
+                            padding: 1em;
+
+                            div {
+                                width: 2em;
+                                height: 2em;
+                                border: 1px solid black;
+                                border-radius: 50%;
+                                padding: 10px;
+
+                                img {
+                                    margin-left: 0.5em;
+                                    margin-top: 0.3em;
+                                    width: 1.2em;
+                                }
+                            }
+
+                            span {
+                                font-size: 1.5em;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .social-div {
+                font-family: "Poppins", sans-serif;
+                display: flex;
+
+                li {
+                    transform: rotate(-90deg);
+                    margin-top: 5em;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+
+                .facebook {
+                    list-style-type: none;
+                }
+            }
+        }
+
+        .first-section-second-div {
+            margin-top: 3em;
+            margin-left: 30%;
+            width: 50em;
+            display: flex;
+            justify-content: space-around;
+
+            .pre,
+            .next {
+                font-family: "Poppins", sans-serif;
+                font-size: 1.5em;
+                margin-top: -1em;
+                padding: 0.5em;
+            }
+
+            .pre:hover,
+            .next:hover {
+                cursor: pointer;
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+
+            .circle {
+                width: 15px;
+                height: 15px;
+                background-color: black;
+                border-radius: 50%;
+                opacity: 0.5;
+            }
+
+            .circle:hover {
+                width: 20px;
+                height: 20px;
+                background-color: black;
+                border-radius: 50%;
+                opacity: 1;
+            }
+        }
+    }
+}
