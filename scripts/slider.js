@@ -15,6 +15,7 @@ export default class Slider {
         this.$prev = this.rootEl.querySelector(".prev");
         this.$next = this.rootEl.querySelector(".next");
         this.current = null;
+        this.index = 1;
 
         this.render();
     }
@@ -27,8 +28,8 @@ export default class Slider {
         this.index = 0;
 
         this.removeClassByDiv();
-        this.picture.classList.add(NUMBER_OF_PICTURES[this.index]);
-        this.current = NUMBER_OF_PICTURES[this.index];
+        this.picture.classList.add(Slider.NUMBER_OF_PICTURES[this.index]);
+        this.current = Slider.NUMBER_OF_PICTURES[this.index];
     }
 
     getSecondPicture() {
@@ -39,8 +40,8 @@ export default class Slider {
         this.index = 1;
 
         this.removeClassByDiv();
-        this.picture.classList.add(NUMBER_OF_PICTURES[this.index]);
-        this.current = NUMBER_OF_PICTURES[this.index];
+        this.picture.classList.add(Slider.NUMBER_OF_PICTURES[this.index]);
+        this.current = Slider.NUMBER_OF_PICTURES[this.index];
     }
 
     getThirdPicture() {
@@ -51,8 +52,8 @@ export default class Slider {
         this.index = 2;
 
         this.removeClassByDiv();
-        this.picture.classList.add(NUMBER_OF_PICTURES[this.index]);
-        this.current = NUMBER_OF_PICTURES[this.index];
+        this.picture.classList.add(Slider.NUMBER_OF_PICTURES[this.index]);
+        this.current = Slider.NUMBER_OF_PICTURES[this.index];
     }
 
     getFourthPicture() {
@@ -63,8 +64,8 @@ export default class Slider {
         this.index = 3;
 
         this.removeClassByDiv();
-        this.picture.classList.add(NUMBER_OF_PICTURES[this.index]);
-        this.current = NUMBER_OF_PICTURES[this.index];
+        this.picture.classList.add(Slider.NUMBER_OF_PICTURES[this.index]);
+        this.current = Slider.NUMBER_OF_PICTURES[this.index];
     }
 
     getFifthPicture() {
@@ -75,8 +76,8 @@ export default class Slider {
         this.index = 4;
 
         this.removeClassByDiv();
-        this.picture.classList.add(NUMBER_OF_PICTURES[this.index]);
-        this.current = NUMBER_OF_PICTURES[this.index];
+        this.picture.classList.add(Slider.NUMBER_OF_PICTURES[this.index]);
+        this.current = Slider.NUMBER_OF_PICTURES[this.index];
     }
 
     getSixthPicture() {
@@ -87,8 +88,8 @@ export default class Slider {
         this.index = 5;
 
         this.removeClassByDiv();
-        this.picture.classList.add(NUMBER_OF_PICTURES[this.index]);
-        this.current = NUMBER_OF_PICTURES[this.index];
+        this.picture.classList.add(Slider.NUMBER_OF_PICTURES[this.index]);
+        this.current = Slider.NUMBER_OF_PICTURES[this.index];
     }
 
     removeClassByDiv() {
@@ -101,14 +102,41 @@ export default class Slider {
 
     prevElement() {
         this.buttons[this.index].classList.remove("current--circle");
-        this.buttons[this.index - 1].classList.add("current--circle");
-
         this.index -= 1;
-        this.$current = this.buttons[this.index];
+
+        if (this.index >= 0) {
+            this.buttons[this.index].classList.add("current--circle");
+        }
+        if (this.index < 0) {
+            this.buttons[5].classList.add("current--circle");
+            this.index = 5;
+        }
+
+        this.removeClassByDiv();
+        this.picture.classList.add(Slider.NUMBER_OF_PICTURES[this.index]);
+        this.current = Slider.NUMBER_OF_PICTURES[this.index];
+    }
+
+    nextElement() {
+        this.buttons[this.index].classList.remove("current--circle");
+        this.index += 1;
+
+        if (this.index <= 5) {
+            this.buttons[this.index].classList.add("current--circle");
+        }
+        if (this.index > 5) {
+            this.buttons[0].classList.add("current--circle");
+            this.index = 0;
+        }
+
+        this.removeClassByDiv();
+        this.picture.classList.add(Slider.NUMBER_OF_PICTURES[this.index]);
+        this.current = Slider.NUMBER_OF_PICTURES[this.index];
     }
 
     render() {
         this.$prev.addEventListener("click", this.prevElement.bind(this));
+        this.$next.addEventListener("click", this.nextElement.bind(this));
 
         this.buttons[0].addEventListener(
             "click",
