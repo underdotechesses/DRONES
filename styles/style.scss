@@ -143,6 +143,36 @@ body {
                 }
             }
 
+            .first-picture {
+                width: 1200px;
+                background-image: url("/img/first-drone.png");
+            }
+
+            .second-picture {
+                width: 919px;
+                background-image: url("/img/second-drone.png");
+            }
+
+            .third-picture {
+                width: 896px;
+                background-image: url("/img/third-drone.png");
+            }
+
+            .fourth-picture {
+                width: 1000px;
+                background-image: url("/img/fourth-drone.png");
+            }
+
+            .fifth-picture {
+                width: 1600px;
+                background-image: url("/img/fifth-drone.png");
+            }
+
+            .sixth-picture {
+                width: 1024px;
+                background-image: url("/img/sixth-drone.png");
+            }
+
             .social-div {
                 font-family: "Poppins", sans-serif;
                 display: flex;
@@ -181,7 +211,7 @@ body {
             .pre:hover,
             .next:hover {
                 cursor: pointer;
-                border: 1px solid black;
+                outline: 1px solid black;
                 border-radius: 10px;
             }
 
@@ -191,8 +221,10 @@ body {
                 background-color: black;
                 border-radius: 50%;
                 opacity: 0.5;
+                cursor: pointer;
             }
 
+            .current--circle,
             .circle:hover {
                 width: 20px;
                 height: 20px;

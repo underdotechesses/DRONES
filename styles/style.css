@@ -120,6 +120,30 @@ body .first-section .first-section-first-div .first-column-div .first-column-div
   font-size: 1.5em;
   color: black;
 }
+body .first-section .first-section-first-div .first-picture {
+  width: 1200px;
+  background-image: url("/img/first-drone.png");
+}
+body .first-section .first-section-first-div .second-picture {
+  width: 919px;
+  background-image: url("/img/second-drone.png");
+}
+body .first-section .first-section-first-div .third-picture {
+  width: 896px;
+  background-image: url("/img/third-drone.png");
+}
+body .first-section .first-section-first-div .fourth-picture {
+  width: 1000px;
+  background-image: url("/img/fourth-drone.png");
+}
+body .first-section .first-section-first-div .fifth-picture {
+  width: 1600px;
+  background-image: url("/img/fifth-drone.png");
+}
+body .first-section .first-section-first-div .sixth-picture {
+  width: 1024px;
+  background-image: url("/img/sixth-drone.png");
+}
 body .first-section .first-section-first-div .social-div {
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -152,7 +176,7 @@ body .first-section .first-section-second-div .next {
 body .first-section .first-section-second-div .pre:hover,
 body .first-section .first-section-second-div .next:hover {
   cursor: pointer;
-  border: 1px solid black;
+  outline: 1px solid black;
   border-radius: 10px;
 }
 body .first-section .first-section-second-div .circle {
@@ -161,7 +185,9 @@ body .first-section .first-section-second-div .circle {
   background-color: black;
   border-radius: 50%;
   opacity: 0.5;
+  cursor: pointer;
 }
+body .first-section .first-section-second-div .current--circle,
 body .first-section .first-section-second-div .circle:hover {
   width: 20px;
   height: 20px;
