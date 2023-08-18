@@ -200,7 +200,7 @@ body {
             display: flex;
             justify-content: space-around;
 
-            .pre,
+            .prev,
             .next {
                 font-family: "Poppins", sans-serif;
                 font-size: 1.5em;
@@ -208,7 +208,7 @@ body {
                 padding: 0.5em;
             }
 
-            .pre:hover,
+            .prev:hover,
             .next:hover {
                 cursor: pointer;
                 outline: 1px solid black;

@@ -1,8 +1,16 @@
 export default class Slider {
+    static NUMBER_OF_PICTURES = [
+        "first-picture",
+        "second-picture",
+        "third-picture",
+        "fourth-picture",
+        "fifth-picture",
+        "sixth-picture",
+    ];
+
     constructor() {
         this.picture = document.querySelector(".picture");
         this.rootEl = document.querySelector(".first-section-second-div");
-        this.$current = this.rootEl.querySelector(".current--circle");
         this.buttons = this.rootEl.querySelectorAll(".circle");
         this.$prev = this.rootEl.querySelector(".prev");
         this.$next = this.rootEl.querySelector(".next");
@@ -12,57 +20,75 @@ export default class Slider {
     }
 
     getFirstPicture() {
+        this.$current = this.rootEl.querySelector(".current--circle");
+
         this.$current.classList.remove("current--circle");
         this.buttons[0].classList.add("current--circle");
+        this.index = 0;
 
         this.removeClassByDiv();
-        this.picture.classList.add("first-picture");
-        this.current = "first-picture";
+        this.picture.classList.add(NUMBER_OF_PICTURES[this.index]);
+        this.current = NUMBER_OF_PICTURES[this.index];
     }
 
     getSecondPicture() {
+        this.$current = this.rootEl.querySelector(".current--circle");
+
         this.$current.classList.remove("current--circle");
         this.buttons[1].classList.add("current--circle");
+        this.index = 1;
 
         this.removeClassByDiv();
-        this.picture.classList.add("second-picture");
-        this.current = "second-picture";
+        this.picture.classList.add(NUMBER_OF_PICTURES[this.index]);
+        this.current = NUMBER_OF_PICTURES[this.index];
     }
 
     getThirdPicture() {
+        this.$current = this.rootEl.querySelector(".current--circle");
+
         this.$current.classList.remove("current--circle");
         this.buttons[2].classList.add("current--circle");
+        this.index = 2;
 
         this.removeClassByDiv();
-        this.picture.classList.add("third-picture");
-        this.current = "third-picture";
+        this.picture.classList.add(NUMBER_OF_PICTURES[this.index]);
+        this.current = NUMBER_OF_PICTURES[this.index];
     }
 
     getFourthPicture() {
+        this.$current = this.rootEl.querySelector(".current--circle");
+
         this.$current.classList.remove("current--circle");
         this.buttons[3].classList.add("current--circle");
+        this.index = 3;
 
         this.removeClassByDiv();
-        this.picture.classList.add("fourth-picture");
-        this.current = "fourth-picture";
+        this.picture.classList.add(NUMBER_OF_PICTURES[this.index]);
+        this.current = NUMBER_OF_PICTURES[this.index];
     }
 
     getFifthPicture() {
+        this.$current = this.rootEl.querySelector(".current--circle");
+
         this.$current.classList.remove("current--circle");
         this.buttons[4].classList.add("current--circle");
+        this.index = 4;
 
         this.removeClassByDiv();
-        this.picture.classList.add("fifth-picture");
-        this.current = "fifth-picture";
+        this.picture.classList.add(NUMBER_OF_PICTURES[this.index]);
+        this.current = NUMBER_OF_PICTURES[this.index];
     }
 
     getSixthPicture() {
+        this.$current = this.rootEl.querySelector(".current--circle");
+
         this.$current.classList.remove("current--circle");
-        this.buttons[1].classList.add("current--circle");
+        this.buttons[5].classList.add("current--circle");
+        this.index = 5;
 
         this.removeClassByDiv();
-        this.picture.classList.add("sixth-picture");
-        this.current = "sixth-picture";
+        this.picture.classList.add(NUMBER_OF_PICTURES[this.index]);
+        this.current = NUMBER_OF_PICTURES[this.index];
     }
 
     removeClassByDiv() {
@@ -73,7 +99,17 @@ export default class Slider {
         }
     }
 
+    prevElement() {
+        this.buttons[this.index].classList.remove("current--circle");
+        this.buttons[this.index - 1].classList.add("current--circle");
+
+        this.index -= 1;
+        this.$current = this.buttons[this.index];
+    }
+
     render() {
+        this.$prev.addEventListener("click", this.prevElement.bind(this));
+
         this.buttons[0].addEventListener(
             "click",
             this.getFirstPicture.bind(this)
