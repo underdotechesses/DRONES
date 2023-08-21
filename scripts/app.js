@@ -1,5 +1,5 @@
 import Slider from "./slider.js";
+import Theme from "./theme.js";
 
 const slider = new Slider();
-
-console.log(slider);
+const theme = new Theme();

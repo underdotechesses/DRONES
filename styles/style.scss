@@ -1,7 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Syne:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Syne:wght@500&family=Urbanist:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Syne:wght@500&family=Urbanist:wght@300&display=swap");
+
+.light-theme {
+    --main-color: #fff;
+    --second-color: #000000;
+}
+
+.dark-theme {
+    --main-color: #0c0b15f5;
+    --second-color: #ffffff97;
+}
 
 body {
+    background-color: var(--main-color);
     padding: 42px 52px;
 
     header nav {
@@ -14,6 +25,7 @@ body {
             width: 14%;
 
             .logo-name {
+                color: var(--second-color);
                 font-weight: 800;
                 font-family: "Poppins", sans-serif;
                 font-size: 2em;
@@ -37,7 +49,7 @@ body {
 
                     a {
                         text-decoration: none;
-                        color: black;
+                        color: var(--second-color);
                     }
                 }
             }
@@ -55,8 +67,16 @@ body {
 
                     a {
                         text-decoration: none;
-                        color: black;
+                        color: var(--second-color);
                     }
+                }
+
+                .change-theme {
+                    margin-top: -10px;
+                }
+
+                .change-theme:hover {
+                    cursor: pointer;
                 }
 
                 .menu:hover {
@@ -71,6 +91,7 @@ body {
             font-size: 4em;
             text-align: center;
             font-weight: 700;
+            color: var(--second-color);
         }
 
         .first-section-first-div {
@@ -85,6 +106,7 @@ body {
 
                 .nemo {
                     font-size: 1.5em;
+                    color: var(--second-color);
                 }
 
                 .first-column-div-div {
@@ -100,14 +122,14 @@ body {
                             justify-content: space-around;
                             align-items: center;
                             text-decoration: none;
-                            background-color: black;
+                            background-color: var(--second-color);
                             opacity: 0.8;
                             padding: 1em;
                             border-radius: 10px;
 
                             span {
                                 font-size: 1.5em;
-                                color: white;
+                                color: var(--main-color);
                             }
                         }
                     }
@@ -127,7 +149,7 @@ body {
                             div {
                                 width: 2em;
                                 height: 2em;
-                                border: 1px solid black;
+                                border: 1px solid var(--second-color);
                                 border-radius: 50%;
                                 padding: 10px;
 
@@ -140,7 +162,7 @@ body {
 
                             span {
                                 font-size: 1.5em;
-                                color: black;
+                                color: var(--second-color);
                             }
                         }
                     }
@@ -196,7 +218,7 @@ body {
 
                         a {
                             text-decoration: none;
-                            color: black;
+                            color: var(--second-color);
                         }
                     }
 
@@ -216,6 +238,7 @@ body {
 
             .prev,
             .next {
+                color: var(--second-color);
                 font-family: "Poppins", sans-serif;
                 font-size: 1.5em;
                 margin-top: -1em;
@@ -225,14 +248,14 @@ body {
             .prev:hover,
             .next:hover {
                 cursor: pointer;
-                outline: 1px solid black;
+                outline: 1px solid var(--second-color);
                 border-radius: 10px;
             }
 
             .circle {
                 width: 15px;
                 height: 15px;
-                background-color: black;
+                background-color: var(--second-color);
                 border-radius: 50%;
                 opacity: 0.5;
                 cursor: pointer;
@@ -242,9 +265,95 @@ body {
             .circle:hover {
                 width: 20px;
                 height: 20px;
-                background-color: black;
+                background-color: var(--second-color);
                 border-radius: 50%;
                 opacity: 1;
+            }
+        }
+    }
+
+    .second-section {
+        margin-top: 4em;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin-left: 8%;
+
+            li {
+                list-style-type: none;
+            }
+
+            .second-section-first-li {
+                background-color: var(--white);
+                border-radius: 10px;
+                padding: 2em;
+                box-shadow: 0px 14px 33px -8px rgba(0, 0, 0, 0.406);
+
+                img {
+                    margin-top: 1em;
+                }
+            }
+
+            .second-section-img {
+                margin-top: 2em;
+            }
+
+            .ladspa-img {
+                margin-top: 4em;
+            }
+        }
+    }
+
+    .third-section {
+        margin-top: 4em;
+        display: flex;
+
+        .third-section-drone {
+            position: absolute;
+            left: -0.1%;
+        }
+
+        .third-section-container {
+            width: 40%;
+            margin-left: 50%;
+            .drone-without {
+                color: var(--second-color);
+                font-family: "Urbanist", sans-serif;
+                font-size: 4em;
+                font-weight: 900;
+            }
+
+            .second-nemo {
+                color: var(--second-color);
+                font-family: "Poppins", sans-serif;
+                font-size: 1.5em;
+            }
+
+            .third-section-columns {
+                display: flex;
+                justify-content: space-between;
+
+                .first-p {
+                    color: var(--second-color);
+                    font-size: 1.5em;
+                    font-family: "Urbanist", sans-serif;
+                    font-weight: 900;
+                }
+
+                .second-p {
+                    color: var(--second-color);
+                    font-family: "Poppins", sans-serif;
+                    width: 70%;
+                }
+            }
+
+            .buy-now {
+                color: var(--second-color);
+                font-size: 1.5em;
+                font-family: "Urbanist", sans-serif;
+                font-weight: 900;
             }
         }
     }
