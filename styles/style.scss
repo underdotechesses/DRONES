@@ -61,6 +61,7 @@ body {
                 justify-content: space-around;
 
                 li {
+                    margin-left: 20px;
                     list-style-type: none;
                     font-family: "Urbanist", sans-serif;
                     font-size: 1.5em;
@@ -72,7 +73,7 @@ body {
                 }
 
                 .change-theme {
-                    margin-top: -10px;
+                    margin-left: 50px;
                 }
 
                 .change-theme:hover {
@@ -81,6 +82,39 @@ body {
 
                 .menu:hover {
                     cursor: pointer;
+                }
+
+                .menu-hidden {
+                    position: absolute;
+                    visibility: hidden;
+                    width: 1px;
+                    height: 1px;
+                }
+
+                .menu-container {
+                    margin-left: 10px;
+                    width: 20em;
+                }
+
+                .menu-container-hidden {
+                    position: absolute;
+                    visibility: hidden;
+                    width: 1px;
+                    height: 1px;
+                }
+
+                .menu-ul {
+                    border: 1px solid var(--second-color);
+                    border-radius: 15px;
+
+                    li {
+                        color: var(--second-color);
+                        margin-top: 10px;
+                    }
+
+                    .close-tag:hover {
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -350,11 +384,68 @@ body {
             }
 
             .buy-now {
+                text-decoration: none;
                 color: var(--second-color);
                 font-size: 1.5em;
                 font-family: "Urbanist", sans-serif;
                 font-weight: 900;
             }
+        }
+    }
+
+    .fourth-section {
+        margin-top: 4em;
+        display: flex;
+
+        .third-section-container {
+            width: 50%;
+
+            .drone-without {
+                color: var(--second-color);
+                font-family: "Urbanist", sans-serif;
+                font-size: 4em;
+                font-weight: 900;
+            }
+
+            .second-nemo {
+                color: var(--second-color);
+                font-family: "Poppins", sans-serif;
+                font-size: 1.5em;
+            }
+
+            .third-section-columns {
+                display: flex;
+                justify-content: space-between;
+
+                .first-p {
+                    color: var(--second-color);
+                    font-size: 1.5em;
+                    font-family: "Urbanist", sans-serif;
+                    font-weight: 900;
+                }
+
+                .second-p {
+                    color: var(--second-color);
+                    font-family: "Poppins", sans-serif;
+                    width: 70%;
+                }
+            }
+
+            .buy-now {
+                text-decoration: none;
+                color: var(--second-color);
+                font-size: 1.5em;
+                font-family: "Urbanist", sans-serif;
+                font-weight: 900;
+            }
+        }
+
+        img {
+            position: absolute;
+            right: -0.01%;
+            margin-top: 10em;
+            width: 50%;
+            height: 50%;
         }
     }
 }

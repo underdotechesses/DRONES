@@ -55,6 +55,7 @@ body header nav .all-ul .second-ul {
   justify-content: space-around;
 }
 body header nav .all-ul .second-ul li {
+  margin-left: 20px;
   list-style-type: none;
   font-family: "Urbanist", sans-serif;
   font-size: 1.5em;
@@ -64,12 +65,39 @@ body header nav .all-ul .second-ul li a {
   color: var(--second-color);
 }
 body header nav .all-ul .second-ul .change-theme {
-  margin-top: -10px;
+  margin-left: 50px;
 }
 body header nav .all-ul .second-ul .change-theme:hover {
   cursor: pointer;
 }
 body header nav .all-ul .second-ul .menu:hover {
+  cursor: pointer;
+}
+body header nav .all-ul .second-ul .menu-hidden {
+  position: absolute;
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+}
+body header nav .all-ul .second-ul .menu-container {
+  margin-left: 10px;
+  width: 20em;
+}
+body header nav .all-ul .second-ul .menu-container-hidden {
+  position: absolute;
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+}
+body header nav .all-ul .second-ul .menu-ul {
+  border: 1px solid var(--second-color);
+  border-radius: 15px;
+}
+body header nav .all-ul .second-ul .menu-ul li {
+  color: var(--second-color);
+  margin-top: 10px;
+}
+body header nav .all-ul .second-ul .menu-ul .close-tag:hover {
   cursor: pointer;
 }
 body .first-section .get-your-hands {
@@ -293,10 +321,58 @@ body .third-section .third-section-container .third-section-columns .second-p {
   width: 70%;
 }
 body .third-section .third-section-container .buy-now {
+  text-decoration: none;
   color: var(--second-color);
   font-size: 1.5em;
   font-family: "Urbanist", sans-serif;
   font-weight: 900;
+}
+body .fourth-section {
+  margin-top: 4em;
+  display: flex;
+}
+body .fourth-section .third-section-container {
+  width: 50%;
+}
+body .fourth-section .third-section-container .drone-without {
+  color: var(--second-color);
+  font-family: "Urbanist", sans-serif;
+  font-size: 4em;
+  font-weight: 900;
+}
+body .fourth-section .third-section-container .second-nemo {
+  color: var(--second-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+}
+body .fourth-section .third-section-container .third-section-columns {
+  display: flex;
+  justify-content: space-between;
+}
+body .fourth-section .third-section-container .third-section-columns .first-p {
+  color: var(--second-color);
+  font-size: 1.5em;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 900;
+}
+body .fourth-section .third-section-container .third-section-columns .second-p {
+  color: var(--second-color);
+  font-family: "Poppins", sans-serif;
+  width: 70%;
+}
+body .fourth-section .third-section-container .buy-now {
+  text-decoration: none;
+  color: var(--second-color);
+  font-size: 1.5em;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 900;
+}
+body .fourth-section img {
+  position: absolute;
+  right: -0.01%;
+  margin-top: 10em;
+  width: 50%;
+  height: 50%;
 }
 
 @media (max-width: 990px) {
