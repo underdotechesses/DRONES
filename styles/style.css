@@ -374,6 +374,28 @@ body .fourth-section img {
   width: 50%;
   height: 50%;
 }
+body .fifth-section {
+  margin-top: 10em;
+}
+body .fifth-section .fifth-section-first-p {
+  font-family: "Poppins", sans-serif;
+  color: var(--second-color);
+}
+body .fifth-section .fifth-section-second-p {
+  font-size: 3em;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 900;
+  width: 40%;
+}
+body .fifth-section .fifth-section-main-div {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+}
+body .fifth-section .fifth-section-main-div .fifth-section-columns {
+  border: 1px solid var(--second-color);
+  width: 100%;
+}
 
 @media (max-width: 990px) {
   body {

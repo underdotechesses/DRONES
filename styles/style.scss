@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Syne:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Syne:wght@500&family=Urbanist:wght@300&display=swap");
 
+//font-family: "Poppins", sans-serif;
+//font-family: "Urbanist", sans-serif;
+
 .light-theme {
     --main-color: #fff;
     --second-color: #000000;
@@ -446,6 +449,32 @@ body {
             margin-top: 10em;
             width: 50%;
             height: 50%;
+        }
+    }
+
+    .fifth-section {
+        margin-top: 10em;
+        .fifth-section-first-p {
+            font-family: "Poppins", sans-serif;
+            color: var(--second-color);
+        }
+
+        .fifth-section-second-p {
+            font-size: 3em;
+            font-family: "Urbanist", sans-serif;
+            font-weight: 900;
+            width: 40%;
+        }
+
+        .fifth-section-main-div {
+            display: flex;
+            position: absolute;
+            justify-content: space-between;
+
+            .fifth-section-columns {
+                border: 1px solid var(--second-color);
+                width: 100%;
+            }
         }
     }
 }
