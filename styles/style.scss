@@ -83,19 +83,15 @@ body {
                     cursor: pointer;
                 }
 
-                .menu:hover {
+                .menu:hover,
+                .close-menu:hover {
                     cursor: pointer;
                 }
 
-                .menu-hidden {
-                    position: absolute;
-                    visibility: hidden;
-                    width: 1px;
-                    height: 1px;
-                }
-
                 .menu-container {
-                    margin-left: 10px;
+                    position: absolute;
+                    margin-top: 3em;
+                    margin-left: 2em;
                     width: 20em;
                 }
 
@@ -468,8 +464,10 @@ body {
         }
 
         .fifth-section-main-div {
+            width: 99%;
             margin-top: 2em;
             display: flex;
+            left: 0.5%;
             position: absolute;
             justify-content: space-between;
             color: var(--second-color);
@@ -509,6 +507,116 @@ body {
             }
         }
     }
+
+    .sexth-section {
+        .sexth-section-first-p {
+            font-family: "Poppins", sans-serif;
+            color: var(--second-color);
+        }
+
+        .sexth-section-second-p {
+            width: 50%;
+            opacity: 0.8;
+            font-size: 3em;
+            font-family: "Urbanist", sans-serif;
+            font-weight: 900;
+            color: var(--second-color);
+        }
+
+        .sexth-section-third-p {
+            width: 60%;
+            font-size: 1.5em;
+            opacity: 0.8;
+            font-family: "Poppins", sans-serif;
+            color: var(--second-color);
+        }
+
+        .sexth-section-columns {
+            display: flex;
+            justify-content: space-between;
+            
+            .sexth-section-first-column {
+                background-image: url(../img/Rectangle\ 12.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 400px;
+                height: 400px;
+
+                div {
+                    background-color: rgba(255, 255, 255, 0.466);
+                    margin-left: 20px;
+                    margin-top: 20px;
+                    width: 50px;
+
+                    .day-span {
+                        font-size: 2.9em;
+                    }
+
+                    .month-span {
+                        font-size: 1.2em;
+                    }
+
+                    .year-span {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+
+            .sexth-section-second-column {
+                background-image: url(../img/Rectangle\ 13.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 400px;
+                height: 400px;
+
+                div {
+                    background-color: rgba(255, 255, 255, 0.466);
+                    margin-left: 20px;
+                    margin-top: 20px;
+                    width: 50px;
+
+                    .day-span {
+                        font-size: 2.9em;
+                    }
+
+                    .month-span {
+                        font-size: 1.2em;
+                    }
+
+                    .year-span {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+
+            .sexth-section-third-column {
+                background-image: url(../img/Rectangle\ 14.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 400px;
+                height: 400px;
+
+                div {
+                    background-color: rgba(255, 255, 255, 0.466);
+                    margin-left: 20px;
+                    margin-top: 20px;
+                    width: 50px;
+
+                    .day-span {
+                        font-size: 2.9em;
+                    }
+
+                    .month-span {
+                        font-size: 1.2em;
+                    }
+
+                    .year-span {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 990px) {
@@ -538,6 +646,11 @@ body {
                     li {
                         margin-left: 10px;
                         font-size: 1.5em;
+                    }
+
+                    .menu-container {
+                        margin-left: 2em;
+                        width: 20em;
                     }
                 }
             }

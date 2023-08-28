@@ -6,4 +6,4 @@ const slider = new Slider();
 const theme = new Theme();
 const menu = new Menu();
 
-console.log(menu);
+console.log(slider, theme, menu);
