@@ -55,6 +55,7 @@ body header nav .all-ul .second-ul {
   justify-content: space-around;
 }
 body header nav .all-ul .second-ul li {
+  margin-left: 20px;
   list-style-type: none;
   font-family: "Urbanist", sans-serif;
   font-size: 1.5em;
@@ -64,12 +65,36 @@ body header nav .all-ul .second-ul li a {
   color: var(--second-color);
 }
 body header nav .all-ul .second-ul .change-theme {
-  margin-top: -10px;
+  margin-left: 50px;
 }
 body header nav .all-ul .second-ul .change-theme:hover {
   cursor: pointer;
 }
-body header nav .all-ul .second-ul .menu:hover {
+body header nav .all-ul .second-ul .menu:hover,
+body header nav .all-ul .second-ul .close-menu:hover {
+  cursor: pointer;
+}
+body header nav .all-ul .second-ul .menu-container {
+  position: absolute;
+  margin-top: 3em;
+  margin-left: 2em;
+  width: 20em;
+}
+body header nav .all-ul .second-ul .menu-container-hidden {
+  position: absolute;
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+}
+body header nav .all-ul .second-ul .menu-ul {
+  border: 1px solid var(--second-color);
+  border-radius: 15px;
+}
+body header nav .all-ul .second-ul .menu-ul li {
+  color: var(--second-color);
+  margin-top: 10px;
+}
+body header nav .all-ul .second-ul .menu-ul .close-tag:hover {
   cursor: pointer;
 }
 body .first-section .get-your-hands {
@@ -293,10 +318,197 @@ body .third-section .third-section-container .third-section-columns .second-p {
   width: 70%;
 }
 body .third-section .third-section-container .buy-now {
+  text-decoration: none;
   color: var(--second-color);
   font-size: 1.5em;
   font-family: "Urbanist", sans-serif;
   font-weight: 900;
+}
+body .fourth-section {
+  margin-top: 4em;
+  display: flex;
+}
+body .fourth-section .third-section-container {
+  width: 50%;
+}
+body .fourth-section .third-section-container .drone-without {
+  color: var(--second-color);
+  font-family: "Urbanist", sans-serif;
+  font-size: 4em;
+  font-weight: 900;
+}
+body .fourth-section .third-section-container .second-nemo {
+  color: var(--second-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+}
+body .fourth-section .third-section-container .third-section-columns {
+  display: flex;
+  justify-content: space-between;
+}
+body .fourth-section .third-section-container .third-section-columns .first-p {
+  color: var(--second-color);
+  font-size: 1.5em;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 900;
+}
+body .fourth-section .third-section-container .third-section-columns .second-p {
+  color: var(--second-color);
+  font-family: "Poppins", sans-serif;
+  width: 70%;
+}
+body .fourth-section .third-section-container .buy-now {
+  text-decoration: none;
+  color: var(--second-color);
+  font-size: 1.5em;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 900;
+}
+body .fourth-section img {
+  position: absolute;
+  right: -0.01%;
+  margin-top: 10em;
+  width: 50%;
+  height: 50%;
+}
+body .fifth-section {
+  margin-top: 10em;
+}
+body .fifth-section .fifth-section-first-p {
+  font-family: "Poppins", sans-serif;
+  color: var(--second-color);
+}
+body .fifth-section .fifth-section-second-p {
+  font-size: 3em;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 900;
+  width: 40%;
+  color: var(--second-color);
+}
+body .fifth-section .fifth-section-main-div {
+  width: 99%;
+  margin-top: 2em;
+  display: flex;
+  left: 0.5%;
+  position: absolute;
+  justify-content: space-between;
+  color: var(--second-color);
+}
+body .fifth-section .fifth-section-main-div .fifth-section-columns {
+  border: 1px solid var(--second-color);
+  border-style: dashed;
+  border-radius: 15px;
+  width: 30%;
+}
+body .fifth-section .fifth-section-main-div .fifth-section-columns .description {
+  font-family: "Poppins", sans-serif;
+}
+body .fifth-section .fifth-section-main-div .fifth-section-columns div {
+  display: flex;
+}
+body .fifth-section .fifth-section-main-div .fifth-section-columns div p {
+  font-family: "Poppins", sans-serif;
+  font-size: 900;
+}
+body .fifth-section .rectangle-box {
+  width: 20em;
+  margin-top: 20em;
+  display: flex;
+}
+body .fifth-section .rectangle-box .rectangle {
+  background-image: url("../img/Rectangle 19.svg");
+}
+body .fifth-section .rectangle-box .current-rectangle {
+  background-image: url("../img/Rectangle 20.svg");
+}
+body .sexth-section .sexth-section-first-p {
+  font-family: "Poppins", sans-serif;
+  color: var(--second-color);
+}
+body .sexth-section .sexth-section-second-p {
+  width: 50%;
+  opacity: 0.8;
+  font-size: 3em;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 900;
+  color: var(--second-color);
+}
+body .sexth-section .sexth-section-third-p {
+  width: 60%;
+  font-size: 1.5em;
+  opacity: 0.8;
+  font-family: "Poppins", sans-serif;
+  color: var(--second-color);
+}
+body .sexth-section .sexth-section-columns {
+  display: flex;
+  justify-content: space-between;
+}
+body .sexth-section .sexth-section-columns .sexth-section-first-column {
+  background-image: url(../img/Rectangle\ 12.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+}
+body .sexth-section .sexth-section-columns .sexth-section-first-column div {
+  background-color: rgba(255, 255, 255, 0.466);
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 50px;
+}
+body .sexth-section .sexth-section-columns .sexth-section-first-column div .day-span {
+  font-size: 2.9em;
+}
+body .sexth-section .sexth-section-columns .sexth-section-first-column div .month-span {
+  font-size: 1.2em;
+}
+body .sexth-section .sexth-section-columns .sexth-section-first-column div .year-span {
+  font-size: 1.5em;
+}
+body .sexth-section .sexth-section-columns .sexth-section-second-column {
+  background-image: url(../img/Rectangle\ 13.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+}
+body .sexth-section .sexth-section-columns .sexth-section-second-column div {
+  background-color: rgba(255, 255, 255, 0.466);
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 50px;
+}
+body .sexth-section .sexth-section-columns .sexth-section-second-column div .day-span {
+  font-size: 2.9em;
+}
+body .sexth-section .sexth-section-columns .sexth-section-second-column div .month-span {
+  font-size: 1.2em;
+}
+body .sexth-section .sexth-section-columns .sexth-section-second-column div .year-span {
+  font-size: 1.5em;
+}
+body .sexth-section .sexth-section-columns .sexth-section-third-column {
+  background-image: url(../img/Rectangle\ 14.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+}
+body .sexth-section .sexth-section-columns .sexth-section-third-column div {
+  background-color: rgba(255, 255, 255, 0.466);
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 50px;
+}
+body .sexth-section .sexth-section-columns .sexth-section-third-column div .day-span {
+  font-size: 2.9em;
+}
+body .sexth-section .sexth-section-columns .sexth-section-third-column div .month-span {
+  font-size: 1.2em;
+}
+body .sexth-section .sexth-section-columns .sexth-section-third-column div .year-span {
+  font-size: 1.5em;
 }
 
 @media (max-width: 990px) {
@@ -322,6 +534,10 @@ body .third-section .third-section-container .buy-now {
   body header nav .all-ul .second-ul li {
     margin-left: 10px;
     font-size: 1.5em;
+  }
+  body header nav .all-ul .second-ul .menu-container {
+    margin-left: 2em;
+    width: 20em;
   }
   body .first-section .get-your-hands {
     font-size: 3em;

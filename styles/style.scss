@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Syne:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Syne:wght@500&family=Urbanist:wght@300&display=swap");
 
+//font-family: "Poppins", sans-serif;
+//font-family: "Urbanist", sans-serif;
+
 .light-theme {
     --main-color: #fff;
     --second-color: #000000;
@@ -61,6 +64,7 @@ body {
                 justify-content: space-around;
 
                 li {
+                    margin-left: 20px;
                     list-style-type: none;
                     font-family: "Urbanist", sans-serif;
                     font-size: 1.5em;
@@ -72,15 +76,44 @@ body {
                 }
 
                 .change-theme {
-                    margin-top: -10px;
+                    margin-left: 50px;
                 }
 
                 .change-theme:hover {
                     cursor: pointer;
                 }
 
-                .menu:hover {
+                .menu:hover,
+                .close-menu:hover {
                     cursor: pointer;
+                }
+
+                .menu-container {
+                    position: absolute;
+                    margin-top: 3em;
+                    margin-left: 2em;
+                    width: 20em;
+                }
+
+                .menu-container-hidden {
+                    position: absolute;
+                    visibility: hidden;
+                    width: 1px;
+                    height: 1px;
+                }
+
+                .menu-ul {
+                    border: 1px solid var(--second-color);
+                    border-radius: 15px;
+
+                    li {
+                        color: var(--second-color);
+                        margin-top: 10px;
+                    }
+
+                    .close-tag:hover {
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -350,10 +383,237 @@ body {
             }
 
             .buy-now {
+                text-decoration: none;
                 color: var(--second-color);
                 font-size: 1.5em;
                 font-family: "Urbanist", sans-serif;
                 font-weight: 900;
+            }
+        }
+    }
+
+    .fourth-section {
+        margin-top: 4em;
+        display: flex;
+
+        .third-section-container {
+            width: 50%;
+
+            .drone-without {
+                color: var(--second-color);
+                font-family: "Urbanist", sans-serif;
+                font-size: 4em;
+                font-weight: 900;
+            }
+
+            .second-nemo {
+                color: var(--second-color);
+                font-family: "Poppins", sans-serif;
+                font-size: 1.5em;
+            }
+
+            .third-section-columns {
+                display: flex;
+                justify-content: space-between;
+
+                .first-p {
+                    color: var(--second-color);
+                    font-size: 1.5em;
+                    font-family: "Urbanist", sans-serif;
+                    font-weight: 900;
+                }
+
+                .second-p {
+                    color: var(--second-color);
+                    font-family: "Poppins", sans-serif;
+                    width: 70%;
+                }
+            }
+
+            .buy-now {
+                text-decoration: none;
+                color: var(--second-color);
+                font-size: 1.5em;
+                font-family: "Urbanist", sans-serif;
+                font-weight: 900;
+            }
+        }
+
+        img {
+            position: absolute;
+            right: -0.01%;
+            margin-top: 10em;
+            width: 50%;
+            height: 50%;
+        }
+    }
+
+    .fifth-section {
+        margin-top: 10em;
+        .fifth-section-first-p {
+            font-family: "Poppins", sans-serif;
+            color: var(--second-color);
+        }
+
+        .fifth-section-second-p {
+            font-size: 3em;
+            font-family: "Urbanist", sans-serif;
+            font-weight: 900;
+            width: 40%;
+            color: var(--second-color);
+        }
+
+        .fifth-section-main-div {
+            width: 99%;
+            margin-top: 2em;
+            display: flex;
+            left: 0.5%;
+            position: absolute;
+            justify-content: space-between;
+            color: var(--second-color);
+
+            .fifth-section-columns {
+                border: 1px solid var(--second-color);
+                border-style: dashed;
+                border-radius: 15px;
+                width: 30%;
+
+                .description {
+                    font-family: "Poppins", sans-serif;
+                }
+
+                div {
+                    display: flex;
+
+                    p {
+                        font-family: "Poppins", sans-serif;
+                        font-size: 900;
+                    }
+                }
+            }
+        }
+
+        .rectangle-box {
+            width: 20em;
+            margin-top: 20em;
+            display: flex;
+
+            .rectangle {
+                background-image: url("../img/Rectangle\ 19.svg");
+            }
+
+            .current-rectangle {
+                background-image: url("../img/Rectangle\ 20.svg");
+            }
+        }
+    }
+
+    .sexth-section {
+        .sexth-section-first-p {
+            font-family: "Poppins", sans-serif;
+            color: var(--second-color);
+        }
+
+        .sexth-section-second-p {
+            width: 50%;
+            opacity: 0.8;
+            font-size: 3em;
+            font-family: "Urbanist", sans-serif;
+            font-weight: 900;
+            color: var(--second-color);
+        }
+
+        .sexth-section-third-p {
+            width: 60%;
+            font-size: 1.5em;
+            opacity: 0.8;
+            font-family: "Poppins", sans-serif;
+            color: var(--second-color);
+        }
+
+        .sexth-section-columns {
+            display: flex;
+            justify-content: space-between;
+
+            .sexth-section-first-column {
+                background-image: url(../img/Rectangle\ 12.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 400px;
+                height: 400px;
+
+                div {
+                    background-color: rgba(255, 255, 255, 0.466);
+                    margin-left: 20px;
+                    margin-top: 20px;
+                    width: 50px;
+
+                    .day-span {
+                        font-size: 2.9em;
+                    }
+
+                    .month-span {
+                        font-size: 1.2em;
+                    }
+
+                    .year-span {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+
+            .sexth-section-second-column {
+                background-image: url(../img/Rectangle\ 13.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 400px;
+                height: 400px;
+
+                div {
+                    background-color: rgba(255, 255, 255, 0.466);
+                    margin-left: 20px;
+                    margin-top: 20px;
+                    width: 50px;
+
+                    .day-span {
+                        font-size: 2.9em;
+                    }
+
+                    .month-span {
+                        font-size: 1.2em;
+                    }
+
+                    .year-span {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+
+            .sexth-section-third-column {
+                background-image: url(../img/Rectangle\ 14.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 400px;
+                height: 400px;
+
+                div {
+                    background-color: rgba(255, 255, 255, 0.466);
+                    margin-left: 20px;
+                    margin-top: 20px;
+                    width: 50px;
+
+                    .day-span {
+                        font-size: 2.9em;
+                    }
+
+                    .month-span {
+                        font-size: 1.2em;
+                    }
+
+                    .year-span {
+                        font-size: 1.5em;
+                    }
+                }
             }
         }
     }
@@ -386,6 +646,11 @@ body {
                     li {
                         margin-left: 10px;
                         font-size: 1.5em;
+                    }
+
+                    .menu-container {
+                        margin-left: 2em;
+                        width: 20em;
                     }
                 }
             }
