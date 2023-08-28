@@ -17,7 +17,9 @@ export default class Menu {
     }
 
     render() {
-        this.menu.addEventListener("click", this.addMenuItem.bind(this));
+        if (this.menu.className === "menu") {
+            this.menu.addEventListener("click", this.addMenuItem.bind(this));
+        }
 
         if (this.menu.className !== "menu") {
             this.menu.addEventListener("click", this.closeMenuItem.bind(this));
