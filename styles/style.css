@@ -6,7 +6,7 @@
 }
 
 .dark-theme {
-  --main-color: #0c0b15f5;
+  --main-color: #0c0c13f5;
   --second-color: #ffffff97;
 }
 
@@ -171,7 +171,7 @@ body .first-section .first-section-first-div .second-column-div {
   display: flex;
 }
 body .first-section .first-section-first-div .second-column-div .first-picture {
-  width: 1200px;
+  width: 1100px;
   height: 482px;
   background-image: url("../img/first-drone.png");
 }

@@ -1,27 +1,27 @@
 export default class Menu {
     constructor() {
-        this.menu = document.querySelector(".menu");
+        this.$menu = "menu";
+        this.menu = document.querySelector(`.${this.$menu}`);
         this.menuItems = document.querySelector(".menu-container-hidden");
 
         this.render();
     }
 
     addMenuItem() {
+        this.$menu = "close-menu";
         this.menuItems.className = "menu-container";
-        this.menu.className = "close-menu";
     }
 
     closeMenuItem() {
+        this.$menu = "menu";
         this.menuItems.className = "menu-container-hidden";
-        this.menu.className = "menu";
     }
 
     render() {
-        if (this.menu.className === "menu") {
+        if (this.$menu === "menu") {
             this.menu.addEventListener("click", this.addMenuItem.bind(this));
         }
-
-        if (this.menu.className !== "menu") {
+        if (this.$menu === "close-menu") {
             this.menu.addEventListener("click", this.closeMenuItem.bind(this));
         }
     }
