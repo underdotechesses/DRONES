@@ -619,6 +619,34 @@ body {
     }
 }
 
+@media (max-width: 1500px) {
+    body {
+        header nav {
+            .all-ull {
+                .second-ul {
+                    width: 50%;
+
+                    li {
+                        margin-left: 10px;
+                        font-size: 1.5em;
+                    }
+
+                    .menu-container {
+                        right: -0.01%;
+                        width: 20em;
+                    }
+                }
+            }
+        }
+
+        .first-section {
+            .get-your-hands {
+                top: 30%;
+            }
+        }
+    }
+}
+
 @media (max-width: 990px) {
     body {
         padding: 10px 15px;
