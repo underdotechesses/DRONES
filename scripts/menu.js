@@ -1,26 +1,25 @@
 export default class Menu {
     constructor() {
-        this.menu = document.querySelector(".menu");
+        this.menu = document.querySelector(".close-menu");
         this.menuItems = document.querySelector(".menu-container-hidden");
         this.render();
     }
 
     addMenuItem() {
         this.menuItems.className = "menu-container";
-        this.menu.className = "close-menu";
+        this.menu.classList.add("menu");
     }
 
     closeMenuItem() {
         this.menuItems.className = "menu-container-hidden";
-        this.menu.className = "menu";
+        this.menu.classList.remove("menu");
     }
 
     render() {
-        if (this.menu.className === "menu") {
-            this.menu.addEventListener("click", this.addMenuItem.bind(this));
-        }
-        if (this.menu.className !== "menu") {
+        if (this.menu.classList.contains("menu")) {
             this.menu.addEventListener("click", this.closeMenuItem.bind(this));
+        } else {
+            this.menu.addEventListener("click", this.addMenuItem.bind(this));
         }
     }
 }
