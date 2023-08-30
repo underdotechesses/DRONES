@@ -10,7 +10,7 @@
 }
 
 .dark-theme {
-    --main-color: #0c0c13f5;
+    --main-color: #171722f5;
     --second-color: #ffffff97;
 }
 
@@ -18,7 +18,7 @@ body {
     background-color: var(--main-color);
     padding: 42px 52px;
 
-    header nav {
+    header {
         display: flex;
         justify-content: space-between;
 
@@ -83,26 +83,15 @@ body {
                     cursor: pointer;
                 }
 
-                .menu:hover,
-                .close-menu:hover {
+                .btn-menu:hover {
                     cursor: pointer;
                 }
 
-                .menu-container {
+                .menu-ul {
                     position: absolute;
                     margin-top: 3em;
                     margin-left: 2em;
                     width: 20em;
-                }
-
-                .menu-container-hidden {
-                    position: absolute;
-                    visibility: hidden;
-                    width: 1px;
-                    height: 1px;
-                }
-
-                .menu-ul {
                     border: 1px solid var(--second-color);
                     border-radius: 15px;
 
@@ -110,11 +99,14 @@ body {
                         color: var(--second-color);
                         margin-top: 10px;
                     }
-
-                    .close-tag:hover {
-                        cursor: pointer;
-                    }
                 }
+
+                // .menu-container-hidden {
+                //     position: absolute;
+                //     visibility: hidden;
+                //     width: 1px;
+                //     height: 1px;
+                // }
             }
         }
     }

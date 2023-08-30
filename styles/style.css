@@ -6,7 +6,7 @@
 }
 
 .dark-theme {
-  --main-color: #0c0c13f5;
+  --main-color: #171722f5;
   --second-color: #ffffff97;
 }
 
@@ -14,88 +14,76 @@ body {
   background-color: var(--main-color);
   padding: 42px 52px;
 }
-body header nav {
+body header {
   display: flex;
   justify-content: space-between;
 }
-body header nav .logo-div {
+body header .logo-div {
   display: flex;
   justify-content: space-between;
   width: 14%;
 }
-body header nav .logo-div .logo-name {
+body header .logo-div .logo-name {
   color: var(--second-color);
   font-weight: 800;
   font-family: "Poppins", sans-serif;
   font-size: 2em;
   opacity: 0.7;
 }
-body header nav .all-ul {
+body header .all-ul {
   display: flex;
   width: 70%;
 }
-body header nav .all-ul .first-ul {
+body header .all-ul .first-ul {
   display: flex;
   width: 60%;
   justify-content: space-between;
 }
-body header nav .all-ul .first-ul li {
+body header .all-ul .first-ul li {
   list-style-type: none;
   font-family: "Urbanist", sans-serif;
   font-size: 1.5em;
 }
-body header nav .all-ul .first-ul li a {
+body header .all-ul .first-ul li a {
   text-decoration: none;
   color: var(--second-color);
 }
-body header nav .all-ul .second-ul {
+body header .all-ul .second-ul {
   display: flex;
   margin-left: 10%;
   width: 40%;
   justify-content: space-around;
 }
-body header nav .all-ul .second-ul li {
+body header .all-ul .second-ul li {
   margin-left: 20px;
   list-style-type: none;
   font-family: "Urbanist", sans-serif;
   font-size: 1.5em;
 }
-body header nav .all-ul .second-ul li a {
+body header .all-ul .second-ul li a {
   text-decoration: none;
   color: var(--second-color);
 }
-body header nav .all-ul .second-ul .change-theme {
+body header .all-ul .second-ul .change-theme {
   margin-left: 50px;
 }
-body header nav .all-ul .second-ul .change-theme:hover {
+body header .all-ul .second-ul .change-theme:hover {
   cursor: pointer;
 }
-body header nav .all-ul .second-ul .menu:hover,
-body header nav .all-ul .second-ul .close-menu:hover {
+body header .all-ul .second-ul .btn-menu:hover {
   cursor: pointer;
 }
-body header nav .all-ul .second-ul .menu-container {
+body header .all-ul .second-ul .menu-ul {
   position: absolute;
   margin-top: 3em;
   margin-left: 2em;
   width: 20em;
-}
-body header nav .all-ul .second-ul .menu-container-hidden {
-  position: absolute;
-  visibility: hidden;
-  width: 1px;
-  height: 1px;
-}
-body header nav .all-ul .second-ul .menu-ul {
   border: 1px solid var(--second-color);
   border-radius: 15px;
 }
-body header nav .all-ul .second-ul .menu-ul li {
+body header .all-ul .second-ul .menu-ul li {
   color: var(--second-color);
   margin-top: 10px;
-}
-body header nav .all-ul .second-ul .menu-ul .close-tag:hover {
-  cursor: pointer;
 }
 body .first-section .get-your-hands {
   font-size: 4em;
