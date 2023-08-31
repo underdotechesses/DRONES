@@ -644,7 +644,9 @@ body {
                 opacity: 0.6;
                 width: 60%;
                 border: 0px;
-                border-bottom: 2px solid var(--second-color);
+                border-bottom: 2px solid black;
+                background-color: var(--main-color);
+                border-radius: 15px;
             }
 
             a {
@@ -652,9 +654,35 @@ body {
                 color: var(--main-color);
                 padding: 0.5em;
                 background-color: var(--second-color);
-                border-radius: 10px;
+                border-radius: 15px;
                 text-decoration: none;
             }
+        }
+
+        .anzamalik {
+            font-size: 2.5em;
+            position: absolute;
+            margin-top: -1em;
+            margin-left: 0.5em;
+            padding: 0.5em;
+
+            .anza {
+                color: var(--second-color);
+                border-radius: 10px;
+            }
+
+            .malik {
+                color: var(--main-color);
+                background-color: var(--second-color);
+                border-radius: 10px;
+            }
+        }
+
+        .seventh-section-second-div {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 3em;
+            margin-left: 20%;
         }
     }
 }

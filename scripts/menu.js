@@ -6,19 +6,23 @@ export default class Menu {
         this.render();
     }
 
-    addMenuItem() {
-        this.menuItems.removeAttribute("hiddden");
+    addMenuItemClick() {
+        this.menuItems.hidden = false;
     }
 
-    closeMenuItem() {
-        this.menuItems.setAttribute("hiddden");
+    closeMenuItemClick() {
+        this.menuItems.hidden = true;
+    }
+
+    option() {
+        if (this.menuItems.hidden === true) {
+            this.addMenuItemClick();
+        } else if (this.menuItems.hidden === false) {
+            this.closeMenuItemClick();
+        }
     }
 
     render() {
-        if (this.menuItems.hasAttribute("hidden")) {
-            this.menu.addEventListener("click", this.addMenuItem.bind(this));
-        } else {
-            this.menu.addEventListener("click", this.closeMenuItem.bind(this));
-        }
+        this.menu.addEventListener("click", this.option.bind(this));
     }
 }
