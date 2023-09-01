@@ -894,7 +894,7 @@ body {
     body {
         padding: 5px 10px;
 
-        header nav {
+        header {
             .all-ul {
                 display: block;
 
@@ -920,7 +920,7 @@ body {
 
         .first-section {
             .get-your-hands {
-                font-size: 3em;
+                font-size: 3.5em;
             }
 
             .first-section-first-div {
@@ -1006,6 +1006,56 @@ body {
                 .circle:hover {
                     width: 15px;
                     height: 15px;
+                }
+            }
+        }
+
+        .second-section {
+            ul li {
+                margin-left: 10px;
+                img {
+                    width: 100%;
+                }
+
+                .carbon {
+                    margin-top: 1em;
+                }
+            }
+        }
+
+        .third-section {
+            .third-section-drone {
+                width: 400px;
+                height: 300px;
+                background-repeat: none;
+            }
+
+            .third-section-container {
+                margin-top: 20em;
+                width: 100%;
+                margin-left: 10px;
+
+                .drone-without {
+                    font-size: 2em;
+                }
+            }
+        }
+
+        .fourth-section {
+            .fourth-section-drone {
+                width: 400px;
+                height: 300px;
+                background-repeat: none;
+                margin-top: -10%;
+            }
+
+            .third-section-container {
+                margin-top: 15em;
+                width: 100%;
+                margin-left: 10px;
+
+                .drone-without {
+                    font-size: 2em;
                 }
             }
         }

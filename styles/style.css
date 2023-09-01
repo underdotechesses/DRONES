@@ -725,25 +725,25 @@ body .seventh-section .seventh-section-second-div .seventh-section-company-div .
   body {
     padding: 5px 10px;
   }
-  body header nav .all-ul {
+  body header .all-ul {
     display: block;
   }
-  body header nav .all-ul .first-ul {
+  body header .all-ul .first-ul {
     width: 50%;
   }
-  body header nav .all-ul .first-ul li {
+  body header .all-ul .first-ul li {
     margin-left: 10px;
     font-size: 1.5em;
   }
-  body header nav .all-ul .second-ul {
+  body header .all-ul .second-ul {
     width: 50%;
   }
-  body header nav .all-ul .second-ul li {
+  body header .all-ul .second-ul li {
     margin-left: 10px;
     font-size: 1.5em;
   }
   body .first-section .get-your-hands {
-    font-size: 3em;
+    font-size: 3.5em;
   }
   body .first-section .first-section-first-div {
     font-family: "Poppins", sans-serif;
@@ -813,5 +813,41 @@ body .seventh-section .seventh-section-second-div .seventh-section-company-div .
   body .first-section .first-section-second-div .circle:hover {
     width: 15px;
     height: 15px;
+  }
+  body .second-section ul li {
+    margin-left: 10px;
+  }
+  body .second-section ul li img {
+    width: 100%;
+  }
+  body .second-section ul li .carbon {
+    margin-top: 1em;
+  }
+  body .third-section .third-section-drone {
+    width: 400px;
+    height: 300px;
+    background-repeat: none;
+  }
+  body .third-section .third-section-container {
+    margin-top: 20em;
+    width: 100%;
+    margin-left: 10px;
+  }
+  body .third-section .third-section-container .drone-without {
+    font-size: 2em;
+  }
+  body .fourth-section .fourth-section-drone {
+    width: 400px;
+    height: 300px;
+    background-repeat: none;
+    margin-top: -10%;
+  }
+  body .fourth-section .third-section-container {
+    margin-top: 15em;
+    width: 100%;
+    margin-left: 10px;
+  }
+  body .fourth-section .third-section-container .drone-without {
+    font-size: 2em;
   }
 }/*# sourceMappingURL=style.css.map */
