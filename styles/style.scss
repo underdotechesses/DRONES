@@ -72,6 +72,8 @@ body {
                     list-style-type: none;
                     font-family: "Urbanist", sans-serif;
                     font-size: 1.5em;
+                    color: var(--second-color);
+                    cursor: pointer;
 
                     a {
                         text-decoration: none;
@@ -119,6 +121,14 @@ body {
             box-shadow: 0px 10px 33px -10px var(--second-color);
             margin-left: 20%;
             border-radius: 20px;
+
+            .login-cross {
+                width: 20px;
+                position: absolute;
+                right: 10px;
+                margin-top: 10px;
+                opacity: 0.7;
+            }
 
             li {
                 list-style-type: none;
