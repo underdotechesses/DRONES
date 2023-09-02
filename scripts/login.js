@@ -7,26 +7,31 @@ export default class Login {
         this.loginText = document.querySelector(".login-li");
         this.passwordText = document.querySelector(".password");
         this.loginInput = document.querySelector(".login-input");
-
-        this.loginValue = this.loginInput.value;
-        this.loginLetter = this.loginValue.charAt(0);
+        this.passwordInput = document.querySelector(".password-input");
 
         this.render();
     }
 
     toggleLogin() {
-        this.closeSingInPlace();
-        this.btnLogin.remove();
+        this.loginValue = this.loginInput.value;
+        this.passwordValue = this.passwordInput.value;
 
-        this.mainUl = document.querySelector(".second-ul");
-        this.loginCircle = document.createElement("li");
-        this.loginSpan = document.createElement("span");
+        if (this.loginValue !== "" && this.passwordValue !== "") {
+            this.closeSingInPlace();
+            this.btnLogin.remove();
 
-        this.loginCircle.setAttribute("class", "login-circle");
-        this.loginSpan.innerText = `${this.loginLetter}`;
+            this.mainUl = document.querySelector(".second-ul");
+            this.loginCircle = document.createElement("li");
+            this.loginSpan = document.createElement("span");
 
-        this.mainUl.prepend(this.loginCircle);
-        this.loginCircle.appendChild(this.loginSpan);
+            this.loginCircle.setAttribute("class", "login-circle");
+
+            this.mainUl.prepend(this.loginCircle);
+            this.loginCircle.appendChild(this.loginSpan);
+
+            this.loginLetter = this.loginValue.charAt(0);
+            this.loginSpan.innerText = `${this.loginLetter}`;
+        }
     }
 
     addSingInPlace() {
