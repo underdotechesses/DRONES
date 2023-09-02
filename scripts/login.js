@@ -6,9 +6,10 @@ export default class Login {
         this.loginPlace = document.querySelector(".login-ul");
         this.loginText = document.querySelector(".login-li");
         this.passwordText = document.querySelector(".password");
+        this.loginInput = document.querySelector(".login-input");
 
-        this.loginValue = this.loginText.value;
-        this.passwordValue = this.passwordText.value;
+        this.loginValue = this.loginInput.value;
+        this.loginLetter = this.loginValue.charAt(0);
 
         this.render();
     }
@@ -22,6 +23,7 @@ export default class Login {
         this.loginSpan = document.createElement("span");
 
         this.loginCircle.setAttribute("class", "login-circle");
+        this.loginSpan.innerText = `${this.loginLetter}`;
 
         this.mainUl.prepend(this.loginCircle);
         this.loginCircle.appendChild(this.loginSpan);
