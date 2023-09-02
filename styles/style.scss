@@ -81,6 +81,22 @@ body {
                     }
                 }
 
+                .login-circle {
+                    margin-bottom: 1em;
+                    width: 15px;
+                    height: 15px;
+                    padding: 0.5em;
+                    border: 1px solid var(--second-color);
+                    border-radius: 50%;
+                    text-align: center;
+
+                    span {
+                        position: absolute;
+                        margin-top: -0.3em;
+                        margin-left: -0.3em;
+                    }
+                }
+
                 .change-theme {
                     margin-left: 50px;
                 }
@@ -149,6 +165,18 @@ body {
                     background-color: var(--main-color);
                     color: var(--second-color);
                 }
+            }
+
+            .button-ok {
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                width: 100px;
+                height: 30px;
+                border-radius: 10px;
+                border: none;
+                background-color: var(--main-color);
+                box-shadow: 0px 10px 33px -10px var(--second-color);
             }
         }
 
