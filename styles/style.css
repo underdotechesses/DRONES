@@ -107,7 +107,7 @@ body header .all-ul .second-ul .menu-ul li {
 }
 body .first-section .login-ul {
   width: 50%;
-  height: 20em;
+  height: 25em;
   text-align: center;
   background-color: var(--main-color);
   position: absolute;
@@ -141,6 +141,11 @@ body .first-section .login-ul li input {
   text-align: center;
   background-color: var(--main-color);
   color: var(--second-color);
+}
+body .first-section .login-ul li p {
+  position: absolute;
+  margin-left: 36%;
+  font-family: "Poppins", sans-serif;
 }
 body .first-section .login-ul .button-ok {
   position: absolute;

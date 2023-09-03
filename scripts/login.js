@@ -8,6 +8,8 @@ export default class Login {
         this.passwordText = document.querySelector(".password");
         this.loginInput = document.querySelector(".login-input");
         this.passwordInput = document.querySelector(".password-input");
+        this.notLogin = document.querySelector(".not-login");
+        this.notPassword = document.querySelector(".not-password");
 
         this.render();
     }
@@ -31,6 +33,13 @@ export default class Login {
 
             this.loginLetter = this.loginValue.charAt(0);
             this.loginSpan.innerText = `${this.loginLetter}`;
+        } else if (this.loginValue === "" && this.passwordValue === "") {
+            this.notLogin.hidden = false;
+            this.notPassword.hidden = false;
+        } else if (this.loginValue === "") {
+            this.notLogin.hidden = false;
+        } else if (this.passwordValue === "") {
+            this.notPassword.hidden = false;
         }
     }
 
@@ -40,6 +49,8 @@ export default class Login {
 
     closeSingInPlace() {
         this.loginPlace.hidden = true;
+        this.notLogin.hidden = true;
+        this.notPassword.hidden = true;
     }
 
     option() {

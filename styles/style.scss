@@ -129,7 +129,7 @@ body {
     .first-section {
         .login-ul {
             width: 50%;
-            height: 20em;
+            height: 25em;
             text-align: center;
             background-color: var(--main-color);
             position: absolute;
@@ -164,6 +164,12 @@ body {
                     text-align: center;
                     background-color: var(--main-color);
                     color: var(--second-color);
+                }
+
+                p {
+                    position: absolute;
+                    margin-left: 36%;
+                    font-family: "Poppins", sans-serif;
                 }
             }
 
