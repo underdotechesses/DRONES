@@ -145,7 +145,7 @@ body {
                 margin-top: 10px;
                 opacity: 0.7;
                 padding: 0.5em;
-                border: 1px solid white;
+                border: 1px solid rgba(255, 255, 255, 0.268);
                 border-radius: 10px;
                 box-shadow: 0px 10px 33px -10px var(--second-color);
             }
@@ -170,6 +170,7 @@ body {
                     position: absolute;
                     margin-left: 36%;
                     font-family: "Poppins", sans-serif;
+                    color: var(--second-color);
                 }
             }
 
@@ -180,7 +181,8 @@ body {
                 width: 100px;
                 height: 30px;
                 border-radius: 10px;
-                border: none;
+                border: 1px solid rgba(255, 255, 255, 0.268);
+                color: var(--second-color);
                 background-color: var(--main-color);
                 box-shadow: 0px 10px 33px -10px var(--second-color);
             }

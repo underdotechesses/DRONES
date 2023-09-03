@@ -51,6 +51,8 @@ export default class Login {
         this.loginPlace.hidden = true;
         this.notLogin.hidden = true;
         this.notPassword.hidden = true;
+        this.loginInput.value = "";
+        this.passwordInput.value = "";
     }
 
     option() {
