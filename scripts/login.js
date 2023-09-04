@@ -36,10 +36,12 @@ export default class Login {
         } else if (this.loginValue === "" && this.passwordValue === "") {
             this.notLogin.hidden = false;
             this.notPassword.hidden = false;
-        } else if (this.loginValue === "") {
-            this.notLogin.hidden = false;
-        } else if (this.passwordValue === "") {
+        } else if (this.loginValue !== "" && this.passwordValue === "") {
+            this.notLogin.hidden = true;
             this.notPassword.hidden = false;
+        } else if (this.passwordValue !== "" && this.loginValue === "") {
+            this.notPassword.hidden = true;
+            this.notLogin.hidden = false;
         }
     }
 
