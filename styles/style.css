@@ -484,11 +484,11 @@ body .fifth-section .rectangle-box .rectangle {
 body .fifth-section .rectangle-box .current-rectangle {
   background-image: url("../img/Rectangle 20.svg");
 }
-body .sexth-section .sexth-section-first-p {
+body .sixth-section .sexth-section-first-p {
   font-family: "Poppins", sans-serif;
   color: var(--second-color);
 }
-body .sexth-section .sexth-section-second-p {
+body .sixth-section .sexth-section-second-p {
   width: 50%;
   opacity: 0.8;
   font-size: 3em;
@@ -496,81 +496,81 @@ body .sexth-section .sexth-section-second-p {
   font-weight: 900;
   color: var(--second-color);
 }
-body .sexth-section .sexth-section-third-p {
+body .sixth-section .sexth-section-third-p {
   width: 60%;
   font-size: 1.5em;
   opacity: 0.8;
   font-family: "Poppins", sans-serif;
   color: var(--second-color);
 }
-body .sexth-section .sexth-section-columns {
+body .sixth-section .sexth-section-columns {
   display: flex;
   justify-content: space-between;
 }
-body .sexth-section .sexth-section-columns .sexth-section-first-column {
+body .sixth-section .sexth-section-columns .sexth-section-first-column {
   background-image: url(../img/Rectangle\ 12.svg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 400px;
   height: 400px;
 }
-body .sexth-section .sexth-section-columns .sexth-section-first-column div {
+body .sixth-section .sexth-section-columns .sexth-section-first-column div {
   background-color: rgba(255, 255, 255, 0.466);
   margin-left: 20px;
   margin-top: 20px;
   width: 50px;
 }
-body .sexth-section .sexth-section-columns .sexth-section-first-column div .day-span {
+body .sixth-section .sexth-section-columns .sexth-section-first-column div .day-span {
   font-size: 2.9em;
 }
-body .sexth-section .sexth-section-columns .sexth-section-first-column div .month-span {
+body .sixth-section .sexth-section-columns .sexth-section-first-column div .month-span {
   font-size: 1.2em;
 }
-body .sexth-section .sexth-section-columns .sexth-section-first-column div .year-span {
+body .sixth-section .sexth-section-columns .sexth-section-first-column div .year-span {
   font-size: 1.5em;
 }
-body .sexth-section .sexth-section-columns .sexth-section-second-column {
+body .sixth-section .sexth-section-columns .sexth-section-second-column {
   background-image: url(../img/Rectangle\ 13.svg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 400px;
   height: 400px;
 }
-body .sexth-section .sexth-section-columns .sexth-section-second-column div {
+body .sixth-section .sexth-section-columns .sexth-section-second-column div {
   background-color: rgba(255, 255, 255, 0.466);
   margin-left: 20px;
   margin-top: 20px;
   width: 50px;
 }
-body .sexth-section .sexth-section-columns .sexth-section-second-column div .day-span {
+body .sixth-section .sexth-section-columns .sexth-section-second-column div .day-span {
   font-size: 2.9em;
 }
-body .sexth-section .sexth-section-columns .sexth-section-second-column div .month-span {
+body .sixth-section .sexth-section-columns .sexth-section-second-column div .month-span {
   font-size: 1.2em;
 }
-body .sexth-section .sexth-section-columns .sexth-section-second-column div .year-span {
+body .sixth-section .sexth-section-columns .sexth-section-second-column div .year-span {
   font-size: 1.5em;
 }
-body .sexth-section .sexth-section-columns .sexth-section-third-column {
+body .sixth-section .sexth-section-columns .sexth-section-third-column {
   background-image: url(../img/Rectangle\ 14.svg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 400px;
   height: 400px;
 }
-body .sexth-section .sexth-section-columns .sexth-section-third-column div {
+body .sixth-section .sexth-section-columns .sexth-section-third-column div {
   background-color: rgba(255, 255, 255, 0.466);
   margin-left: 20px;
   margin-top: 20px;
   width: 50px;
 }
-body .sexth-section .sexth-section-columns .sexth-section-third-column div .day-span {
+body .sixth-section .sexth-section-columns .sexth-section-third-column div .day-span {
   font-size: 2.9em;
 }
-body .sexth-section .sexth-section-columns .sexth-section-third-column div .month-span {
+body .sixth-section .sexth-section-columns .sexth-section-third-column div .month-span {
   font-size: 1.2em;
 }
-body .sexth-section .sexth-section-columns .sexth-section-third-column div .year-span {
+body .sixth-section .sexth-section-columns .sexth-section-third-column div .year-span {
   font-size: 1.5em;
 }
 body .seventh-section h1 {
@@ -593,24 +593,33 @@ body .seventh-section .seventh-section-first-div {
   justify-content: space-between;
   font-family: "Poppins", sans-serif;
 }
-body .seventh-section .seventh-section-first-div input {
+body .seventh-section .seventh-section-first-div .e-mail {
   font-size: 1.8em;
   padding: 0.5em;
   opacity: 0.6;
-  width: 60%;
+  width: 16em;
   border: 0px;
   border-bottom: 2px solid black;
   background-color: var(--main-color);
   border-radius: 15px;
   color: var(--second-color);
 }
-body .seventh-section .seventh-section-first-div a {
+body .seventh-section .seventh-section-first-div .subscribe {
+  cursor: pointer;
+  margin-left: 10px;
   font-size: 1.8em;
   color: var(--main-color);
   padding: 0.5em;
   background-color: var(--second-color);
   border-radius: 15px;
   text-decoration: none;
+}
+body .seventh-section .successful-sub,
+body .seventh-section .not-email {
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+  opacity: 0.8;
+  margin-left: 35%;
 }
 body .seventh-section .anzamalik {
   font-size: 2.5em;
@@ -920,5 +929,21 @@ body .seventh-section .seventh-section-second-div .seventh-section-company-div .
   }
   body .fourth-section .third-section-container .drone-without {
     font-size: 2em;
+  }
+  body .fifth-section {
+    margin-top: 5em;
+  }
+  body .fifth-section .fifth-section-second-p {
+    width: 80%;
+    font-size: 2em;
+  }
+  body .fifth-section .fifth-section-columns .description {
+    font-size: 0.9em;
+  }
+  body .fifth-section .fifth-section-columns div p {
+    font-size: 0.7em;
+  }
+  body .sixth-section {
+    margin-top: 10em;
   }
 }/*# sourceMappingURL=style.css.map */
