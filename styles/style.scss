@@ -10,7 +10,7 @@
 }
 
 .dark-theme {
-    --main-color: #171722;
+    --main-color: #1c1c2b;
     --second-color: #ffffff97;
 }
 
@@ -736,6 +736,7 @@ body {
 
         .successful-sub,
         .not-email {
+            color: var(--second-color);
             font-size: 1em;
             font-family: "Poppins", sans-serif;
             opacity: 0.8;
